@@ -767,7 +767,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_k,          focusstack,             {.i = -1 } },
 	#endif // STACKER_PATCH
 	#if SWAPFOCUS_PATCH && PERTAG_PATCH
-	{ MODKEY,                       XK_s,          swapfocus,              {.i = -1 } },
+	// { MODKEY,                       XK_s,          swapfocus,              {.i = -1 } },
 	#endif // SWAPFOCUS_PATCH
 	#if SWITCHCOL_PATCH
 	{ MODKEY,                       XK_v,          switchcol,              {0} },
@@ -881,7 +881,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_F5,         xrdb,                   {.v = NULL } },
 	#endif // XRDB_PATCH
 	{ MODKEY,                       XK_t,          setlayout,              {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,          setlayout,              {.v = &layouts[1]} },
+	//{ MODKEY,                       XK_f,          setlayout,              {.v = &layouts[0]} },
 	{ MODKEY,                       XK_m,          setlayout,              {.v = &layouts[2]} },
 	#if COLUMNS_LAYOUT
 	//{ MODKEY,                       XK_c,          setlayout,              {.v = &layouts[3]} },
