@@ -86,7 +86,7 @@ static void (*bartabmonfns[])(Monitor *) = { NULL /* , customlayoutfn */ };
 #if BAR_PANGO_PATCH
 static const char font[]                 = "monospace 10";
 #else
-static const char *fonts[]               = { "monospace:size=10" };
+static const char *fonts[]               = { "monospace:size=10", "JoyPixels:pixelsize=10" };
 #endif // BAR_PANGO_PATCH
 static const char dmenufont[]            = "monospace:size=10";
 
@@ -298,7 +298,6 @@ static char *statuscolors[][ColCount] = {
 
 #if COOL_AUTOSTART_PATCH
 static const char *const autostart[] = {
-	"st", NULL,
 	NULL /* terminate */
 };
 #endif // COOL_AUTOSTART_PATCH
@@ -398,6 +397,7 @@ static const Rule rules[] = {
     RULE(.class = "tmux", .tags = 1 << 1)
     RULE(.title = "Spotify Premium", .tags = 1 << 3)
     RULE(.class = "vlc", .tags = 1 << 3)
+    RULE(.title = "- IntelliJ IDEA", .isfloating = 0)
 };
 
 #if MONITOR_RULES_PATCH
